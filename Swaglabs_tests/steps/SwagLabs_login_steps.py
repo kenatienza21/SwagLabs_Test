@@ -1,6 +1,5 @@
 from behave import given, when, then
 from selenium.webdriver.common.by import By
-import time
 
 
 @given('the user launches the website "{url}"')
