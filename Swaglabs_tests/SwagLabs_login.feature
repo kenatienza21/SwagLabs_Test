@@ -19,9 +19,11 @@ Feature: Swag Labs Sign in Test
 
     # Examples of invalid credentials.
     Examples:
-      | username        | password      | error_message                                                             |
-      | 1rregul@r_user  | Wrongp@55w0rd | Epic sadface: Username and password do not match any user in this service |
-      | locked_out_user | secret_sauce  | Epic sadface: Sorry, this user has been locked out.                       |
-      | standard_user   | ""            | Epic sadface: Password is required                                        |
-      | ""              | secret_sauce  | Epic sadface: Username is required                                        |
-      | ""              | ""            | Epic sadface: Username is required                                        |
+      | username          | password      | error_message                                                             |
+      | 1rregul@r_user    | Wrongp@55w0rd | Epic sadface: Username and password do not match any user in this service |
+      | standard_user     | known_sauce   | Epic sadface: Username and password do not match any user in this service |
+      | non_standard_user | secret_sauce  | Epic sadface: Username and password do not match any user in this service |
+      | locked_out_user   | secret_sauce  | Epic sadface: Sorry, this user has been locked out.                       |
+      | standard_user     | ""            | Epic sadface: Password is required                                        |
+      | ""                | secret_sauce  | Epic sadface: Username is required                                        |
+      | ""                | ""            | Epic sadface: Username is required                                        |
