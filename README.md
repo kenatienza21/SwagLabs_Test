@@ -14,11 +14,11 @@ This project automates the testing of the sign-in functionality of the Swag Labs
 * [References](#references)
 * [Author](#author)
 
-## Description {#description}
+## Description <a id="description"></a>
 
 This project aims to verify the sign-in functionality of the Swag Labs website. It includes tests for successful logins with valid credentials and failed logins with various invalid credentials, including locked-out user scenarios.
 
-## Setup {#setup}
+## Setup <a id="setup"></a>
 
 1.  **Install Python 3.12:** Ensure you have Python 3.x installed on your system.
 2.  **Setup Project in PyCharm:**
@@ -30,7 +30,7 @@ This project aims to verify the sign-in functionality of the Swag Labs website. 
         ```
 3.  **Download ChromeDriver:** Download the appropriate ChromeDriver for your Chrome browser version from [ChromeDriver Downloads](https://chromedriver.chromium.org/downloads) and place it in a directory that is in your system's PATH.
 
-## Usage {#usage}
+## Usage <a id="usage"></a>
 
 To run the tests, navigate to the project directory within PyCharm's terminal and execute the following command:
 
@@ -40,14 +40,14 @@ behave features/sign_in.feature
 
 Alternatively, you can configure a Behave run configuration within PyCharm for easier execution.
 
-## Features {#features}
+## Features <a id="features"></a>
 
 * **Successful login with valid credentials.**
 * **Failed login with invalid credentials** (invalid password, invalid username, and empty fields).
 * **Handling of locked-out user scenarios.**
 * **Display of appropriate error messages for failed login attempts.**
 
-## Test Scenarios {#test-scenarios}
+## Test Scenarios <a id="test-scenarios"></a>
 
 * **Successful Login:**
     * Tests successful login with "standard\_user" and "secret\_sauce".
@@ -57,20 +57,20 @@ Alternatively, you can configure a Behave run configuration within PyCharm for e
 * **Error Message Verification:**
     * Verifies that the correct error messages are displayed for each failed login scenario.
 
-## Dependencies {#dependencies}
+## Dependencies <a id="dependencies"></a>
 
 * **Selenium:** For web browser automation.
 * **Behave:** For Behavior-Driven Development (BDD).
 * **ChromeDriver:** For controlling the Chrome browser.
 
-## Environment {#environment}
+## Environment <a id="environment"></a>
 
 * **Operating System:** Tested on Windows 10.
 * **Browser:** Google Chrome.
 * **Python:** 3.12
 * **IDE:** PyCharm
 
-## References {#references}
+## References <a id="references"></a>
 
 ### Official Documentation
 
@@ -103,11 +103,11 @@ Alternatively, you can configure a Behave run configuration within PyCharm for e
     * Title: Allure report: nothing shown in Chrome
     * URL: https://stackoverflow.com/questions/23997449/allure-report-nothing-shown-in-chrome/78205486#78205486
 
-### Webpage used for Testomg
+### Webpage used for Testing
 
 * **SauceDemo webpage:**
     * Title: SauceDemo webpage
     * URL: https://www.saucedemo.com/
  
-### Author {#author}
+### Author <a id="author"></a>
 Kenneth Roel C. Atienza [kenatienza21]
